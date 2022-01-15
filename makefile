@@ -1,9 +1,11 @@
 CC = g++
 CFLAGS = -Wall -g
 OBJDIR = build/
-maiin: $(OBJDIR)main.o $(OBJDIR)home.o
-	$(CC) $(CFLAGS) -o $(OBJDIR)maiin $(OBJDIR)main.o $(OBJDIR)home.o
+mainexe: $(OBJDIR)main.o $(OBJDIR)home.o $(OBJDIR)config.o
+	$(CC) $(CFLAGS) -DBOOST_LOG_DYN_LINK -o $(OBJDIR)mainexe $(OBJDIR)main.o $(OBJDIR)home.o $(OBJDIR)config.o -lboost_log -lpthread -lboost_thread
 $(OBJDIR)main.o: main.cpp
-	$(CC) $(CFLAGS) -c main.cpp -o $(OBJDIR)main.o
+	$(CC) $(CFLAGS) -DBOOST_LOG_DYN_LINK -c main.cpp -o $(OBJDIR)main.o -lboost_log -lpthread -lboost_thread
 $(OBJDIR)home.o: home.cpp
-	$(CC) $(CFLAGS) -c home.cpp -o $(OBJDIR)home.o
+	$(CC) $(CFLAGS) -DBOOST_LOG_DYN_LINK -c home.cpp -o $(OBJDIR)home.o -lboost_log -lpthread -lboost_thread
+$(OBJDIR)config.o: config.cpp
+	$(CC) $(CFLAGS) -DBOOST_LOG_DYN_LINK -c config.cpp -o $(OBJDIR)config.o -lboost_log -lpthread -lboost_thread
