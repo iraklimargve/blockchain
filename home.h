@@ -1,3 +1,8 @@
+
+#ifndef HOME_H
+#define HOME_H
+
+
 class Home {
 
 public:
@@ -6,3 +11,5 @@ public:
   int Height;
   int Area() const;
 };
+
+#endif
