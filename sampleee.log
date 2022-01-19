@@ -1,39 +1,35 @@
-11111111
-22222222
-[]: 11111111
+CREATE TABLE FirstTable (
+  id serial PRIMARY KEY,
+  name varchar (50),
+  location varchar(50) check (location in ('north', 'south', 'east', 'west')),
+  create_date date
+);
+
+INSERT INTO FirstTable (name, location, create_date) VALUES ('pirveli', 'west', '2022-01-19');
+INSERT INTO FirstTable (name, location, create_date) VALUES ('meore', 'east', '2022-01-22');
+[]: AAAAA BBBBBBWed Jan 19 18:05:53 2022
 []: 22222222
-[]: 11111111
+[]: AAAAA BBBBBBWed Jan 19 18:06:54 2022
 []: 22222222
-[]: 11111111
+[]: AAAAA BBBBBBWed Jan 19 18:07:18 2022
 []: 22222222
-[]: 11111111
+[]: AAAAA BBBBBBWed Jan 19 18:12:47 2022
 []: 22222222
-[]: 11111111
+[]: AAAAA BBBBBBWed Jan 19 18:14:06 2022
 []: 22222222
-[]: 11111111
+[]: AAAAA BBBBBBWed Jan 19 18:15:02 2022
 []: 22222222
-[]: 11111111
+[]: AAAAA BBBBBBWed Jan 19 18:16:01 2022
 []: 22222222
-[]: 11111111
+[]: AAAAA BBBBBBWed Jan 19 18:19:21 2022
 []: 22222222
-[]: 1642340793
+[]: AAAAA BBBBBBWed Jan 19 18:23:45 2022
 []: 22222222
-[]: 1642340935
+[]: AAAAA BBBBBBWed Jan 19 18:32:58 2022
 []: 22222222
-[]: Sun Jan 16 17:49:02 2022
+[]: AAAAA BBBBBBWed Jan 19 18:33:18 2022
 []: 22222222
-[]: Sun Jan 16 17:52:20 2022
- AAAAAAAA
+[]: AAAAA BBBBBBWed Jan 19 18:33:40 2022
 []: 22222222
-[]: Sun Jan 16 17:53:07 2022
- AAAAAAAA
-[]: 22222222
-[]: Sun Jan 16 18:28:04 2022
- AAAAAAAA
-[]: 22222222
-[]: AAAAA Sun Jan 16 18:32:33 2022
-[]: 22222222
-[]: AAAAA BBBBBBSun Jan 16 18:33:01 2022
-[]: 22222222
-[]: AAAAA BBBBBBSun Jan 16 19:03:02 2022
+[]: AAAAA BBBBBBWed Jan 19 18:34:23 2022
 []: 22222222

@@ -12,6 +12,8 @@
 #include <boost/log/sources/record_ostream.hpp>
 #include <boost/date_time/local_time/local_time.hpp>
 #include <stdio.h>
+#include <iostream>
+
 
 
 class Config{
@@ -21,6 +23,7 @@ public:
     return instance;
   }
   void InitLogger();
+  void InitDatabase();
 private:
   Config() = default;
 public:
